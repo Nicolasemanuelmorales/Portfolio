@@ -1,0 +1,23 @@
+function cambiarAOscuro() {
+    document.getElementById("body").classList.remove('w3-light-grey');
+    document.getElementById("body").classList.add('negro-oscuro');
+    document.getElementById("cuadro-izq").classList.remove('w3-white');
+    document.getElementById("cuadro-izq").classList.remove('w3-text-grey');
+    document.getElementById("cuadro-izq").classList.add('negro-claro');
+    document.getElementById("cuadro-izq").classList.add('blanco-falso');
+    document.getElementById("cuadro-der-exp-lab").classList.remove('w3-white');
+    document.getElementById("cuadro-der-exp-lab").classList.remove('w3-text-grey');
+    document.getElementById("cuadro-der-exp-lab").classList.add('negro-claro');
+    document.getElementById("cuadro-der-exp-lab").classList.add('blanco-falso');
+    document.getElementById("cuadro-der-edu").classList.remove('w3-white');
+    document.getElementById("cuadro-der-edu").classList.remove('w3-text-grey');
+    document.getElementById("cuadro-der-edu").classList.add('negro-claro');
+    document.getElementById("cuadro-der-edu").classList.add('blanco-falso');
+    document.getElementById("cuadro-der-exp-pro").classList.remove('w3-white');
+    document.getElementById("cuadro-der-exp-pro").classList.remove('w3-text-grey');
+    document.getElementById("cuadro-der-exp-pro").classList.add('negro-claro');
+    document.getElementById("cuadro-der-exp-pro").classList.add('blanco-falso');
+    document.getElementById("footer").classList.remove('w3-teal');
+    document.getElementById("footer").classList.add('negro-claro');
+    document.getElementById("footer").classList.add('blanco-falso');
+  }
