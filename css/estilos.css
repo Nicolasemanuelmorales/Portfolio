@@ -13,3 +13,9 @@
 .cursor-pointer{
 cursor: pointer;
 }
+.bor-bot{
+border-bottom: 1px solid white !important;    
+}
+.text-center{
+  text-align: center;  
+}
