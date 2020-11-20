@@ -21,7 +21,7 @@
   }
 </style>
 
-<body id="body" class="w3-light-grey">
+<body onload="cargaDeCookies()" id="body" class="w3-light-grey">
   <!-- Page Container -->
   <div class="w3-content w3-margin-top" style="max-width: 1400px">
     <!-- The Grid -->
@@ -35,7 +35,7 @@
               <button class="w3-button w3-large w3-padding-small w3-teal">Tema</button>
               <div class="w3-dropdown-content w3-bar-block w3-card-4">
                 <a onclick="cambiarAOscuro()" id="oscuro" class=" w3-padding-small w3-teal bor-bot w3-text-black w3-bar-item w3-button"><b>Oscuro</b></a>
-                <a id="claro" class="w3-teal w3-bar-item w3-button w3-padding-small"><b>Claro</b></a>
+                <a onclick="cambiarAClaro()" id="claro" class="w3-teal w3-bar-item w3-button w3-padding-small"><b>Claro</b></a>
               </div>
             </div>
             <div style="background: rgba(40, 40, 40, 0.6); width: 100%;"
