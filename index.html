@@ -2,24 +2,13 @@
 <html>
 <title>Nicolás Emanuel Morales</title>
 <meta charset="UTF-8" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="css/w3.css" />
 <link rel="stylesheet" href="css/estilos.css" />
-
+<link rel="stylesheet" href="css/switch.css" />
 <link rel="stylesheet" href="font/roboto.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<style>
-  html,
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Roboto", sans-serif;
-  }
-</style>
 
 <body onload="cargaDeCookies()" id="body" class="w3-light-grey">
   <!-- Page Container -->
@@ -31,11 +20,24 @@
         <div id="cuadro-izq" class="w3-white w3-text-grey w3-card-4">
           <div class="w3-display-container">
             <img src="img/Perfil.jpg" style="width: 100%" alt="Nicolás Emanuel Morales" />
-            <div class="w3-dropdown-hover w3-display-topleft">
-              <button class="w3-button w3-large w3-padding-small w3-teal">Tema</button>
-              <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a onclick="cambiarAOscuro()" id="oscuro" class=" w3-padding-small w3-teal bor-bot w3-text-black w3-bar-item w3-button"><b>Oscuro</b></a>
-                <a onclick="cambiarAClaro()" id="claro" class="w3-teal w3-bar-item w3-button w3-padding-small"><b>Claro</b></a>
+            <div class="w3-display-topleft arreglo-switch-tema">
+              <div class="onoffswitch">
+                <input type="checkbox" onclick="CambiarEstado()" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0"
+                  checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+            <div class="w3-display-topright arreglo-switch-idioma">
+              <div class="onoffswitch2">
+                <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox2" id="myonoffswitch2" tabindex="0"
+                  checked>
+                <label class="onoffswitch-label2" for="myonoffswitch2">
+                  <span class="onoffswitch-inner2"></span>
+                  <span class="onoffswitch-switch2"></span>
+                </label>
               </div>
             </div>
             <div style="background: rgba(40, 40, 40, 0.6); width: 100%;"

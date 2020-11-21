@@ -51,6 +51,12 @@ function cambiarAClaro() {
   document.getElementById("footer").classList.remove('blanco-falso');
 }
 
+function CambiarEstado(){
+  if(document.getElementById("myonoffswitch").checked === true){
+    cambiarAOscuro();
+  }else{cambiarAClaro();}
+}
+
 function getCookie(cname) {
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
@@ -78,12 +84,15 @@ function cargaDeCookies() {
   Claro= localStorage2.getItem("Claro");
 
   if(Oscuro == "true"){
+    document.getElementById("myonoffswitch").checked = true;
     cambiarAOscuro();
   }
   if(Claro == "true"){
+    document.getElementById("myonoffswitch").checked = false;
     cambiarAClaro();
   }
   if(Oscuro == "" && Claro == ""){
+    document.getElementById("myonoffswitch").checked = true;
     cambiarAOscuro();
   }
 }
