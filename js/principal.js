@@ -8,6 +8,10 @@ function cambiarAOscuro() {
   document.getElementById("cuadro-izq").classList.remove('w3-text-grey');
   document.getElementById("cuadro-izq").classList.add('negro-claro');
   document.getElementById("cuadro-izq").classList.add('blanco-falso');
+  document.getElementById("cuadro-izq2").classList.remove('w3-white');
+  document.getElementById("cuadro-izq2").classList.remove('w3-text-grey');
+  document.getElementById("cuadro-izq2").classList.add('negro-claro');
+  document.getElementById("cuadro-izq2").classList.add('blanco-falso');
   document.getElementById("cuadro-der-exp-lab").classList.remove('w3-white');
   document.getElementById("cuadro-der-exp-lab").classList.remove('w3-text-grey');
   document.getElementById("cuadro-der-exp-lab").classList.add('negro-claro');
