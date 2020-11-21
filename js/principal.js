@@ -1,7 +1,7 @@
 function cambiarAOscuro() {
   setCookie("Claro","false");
   setCookie("Oscuro","true");
-  document.cookie = "Claro = False; Oscuro = True; path=/"
+  $("hr").addClass("hr");
   document.getElementById("body").classList.remove('w3-light-grey');
   document.getElementById("body").classList.add('negro-oscuro');
   document.getElementById("cuadro-izq").classList.remove('w3-white');
@@ -28,6 +28,7 @@ function cambiarAOscuro() {
 function cambiarAClaro() {
   setCookie("Oscuro","false");
   setCookie("Claro","true");
+  $("hr").removeClass("hr");
   document.getElementById("body").classList.add('w3-light-grey');
   document.getElementById("body").classList.remove('negro-oscuro');
   document.getElementById("cuadro-izq").classList.add('w3-white');
