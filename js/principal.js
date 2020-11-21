@@ -79,21 +79,17 @@ function setCookie(cname,cvalue) {
 }
 
 function cargaDeCookies() {
-  var Oscuro;
-  var Claro;
+  var Oscuro= "";
+  var Claro="";
   Oscuro= localStorage2.getItem("Oscuro");
   Claro= localStorage2.getItem("Claro");
 
-  if(Oscuro == "true"){
-    document.getElementById("myonoffswitch").checked = true;
-    cambiarAOscuro();
-  }
   if(Claro == "true"){
     document.getElementById("myonoffswitch").checked = false;
     cambiarAClaro();
   }
-  if(Oscuro == "" && Claro == ""){
-    document.getElementById("myonoffswitch").checked = true;
+  else{
     cambiarAOscuro();
+    document.getElementById("myonoffswitch").checked = true;
   }
 }
