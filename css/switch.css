@@ -135,7 +135,7 @@
     display: block;
     width: 23px;
     margin: 6px;
-    background: #d9d9d9;
+    background-image:url("../img/usa.jpg") ;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -149,6 +149,6 @@
   }
   .onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-switch2 {
     right: 0px;
-    background-color: #d9d9d9;
+    background-image:url("../img/argc.jpg") ;
   }
   
