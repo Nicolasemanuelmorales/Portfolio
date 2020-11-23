@@ -39,6 +39,10 @@ function cambiarAClaro() {
   document.getElementById("cuadro-izq").classList.add('w3-text-grey');
   document.getElementById("cuadro-izq").classList.remove('negro-claro');
   document.getElementById("cuadro-izq").classList.remove('blanco-falso');
+  document.getElementById("cuadro-izq2").classList.add('w3-white');
+  document.getElementById("cuadro-izq2").classList.add('w3-text-grey');
+  document.getElementById("cuadro-izq2").classList.remove('negro-claro');
+  document.getElementById("cuadro-izq2").classList.remove('blanco-falso');
   document.getElementById("cuadro-der-exp-lab").classList.add('w3-white');
   document.getElementById("cuadro-der-exp-lab").classList.add('w3-text-grey');
   document.getElementById("cuadro-der-exp-lab").classList.remove('negro-claro');
