@@ -66,6 +66,16 @@ function CambiarEstado(){
   }else{cambiarAClaro();}
 }
 
+function CambiarEstadoIdioma(){
+  if(document.getElementById("myonoffswitch2").checked === true){
+    setCookie("Arg","false");
+    setCookie("En","true");
+   }else{
+    setCookie("En","false");
+    setCookie("Arg","true");
+   }
+}
+
 function getCookie(cname) {
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
@@ -87,10 +97,27 @@ function setCookie(cname,cvalue) {
 }
 
 function cargaDeCookies() {
-  var Oscuro= "";
-  var Claro="";
+  var Oscuro = "";
+  var Claro = "";
+  var Arg = "";
+  var En = "";
   Oscuro= localStorage2.getItem("Oscuro");
   Claro= localStorage2.getItem("Claro");
+  Arg= localStorage2.getItem("Arg");
+  En= localStorage2.getItem("En");
+
+  if(Arg == "true"){
+    $('.lang').each(function(index, item) {
+      $(this).text(arrLang["en"][$(this).attr('key')]);
+    });  
+    document.getElementById("myonoffswitch2").checked = false;
+  }
+  else{
+    $('.lang').each(function(index, item) {
+      $(this).text(arrLang["arg"][$(this).attr('key')]);
+    });    
+    document.getElementById("myonoffswitch2").checked = true;
+  }
 
   if(Claro == "true"){
     document.getElementById("myonoffswitch").checked = false;
@@ -162,7 +189,6 @@ $('#myonoffswitch2').change(function() {
         'Proyecto3T': 'About 1 Months',
         'Proyecto3Inf': 'Ecommerce - University Project',
         'Footer':'Find me on my social networks.',
-
         'Idioma': 'Language',
         'Español':'Spanish',
         'Ingles': 'English',
@@ -195,7 +221,6 @@ $('#myonoffswitch2').change(function() {
         'Proyecto3T': 'Aproximadamente 1 Mes',
         'Proyecto3Inf': 'Ecommerce - Proyecto Universitario',
         'Footer':'Buscame en mis redes sociales.',
-
         'Idioma': 'Idioma',
         'Español':'Español',
         'Ingles': 'Inglés',
