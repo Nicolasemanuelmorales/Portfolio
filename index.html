@@ -28,7 +28,7 @@
             </div>
             <div class="w3-display-topright arreglo-switch-idioma">
               <div class="onoffswitch2">
-                <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox2" id="myonoffswitch2"
+                <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox2 translate" id="myonoffswitch2"
                   tabindex="0" checked>
                 <label class="onoffswitch-label2" for="myonoffswitch2">
                   <span class="onoffswitch-inner2"></span>
@@ -37,7 +37,7 @@
               </div>
             </div>
             <div style="background: rgba(40, 40, 40, 0.6); width: 100%;"
-              class="w3-display-bottomleft w3-container blanco-falso text-center">
+              class="w3-display-bottomleft w3-container blanco-falso text-center">    
               <h2>Nicolás Emanuel Morales</h2>
             </div>
           </div>
@@ -49,7 +49,7 @@
               <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><a target="_blank" style="text-decoration: none" href="https://www.google.com/maps/place/San+Justo,+Provincia+de+Buenos+Aires/@-34.6879526,-58.5989153,13z/data=!3m1!4b1!4m5!3m4!1s0x95bcc622f9709805:0xb5f373c7721a50a5!8m2!3d-34.6874084!4d-58.5632629" >San Justo, Buenos Aires, Argentina</a>
             </p>
             <p>
-              <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a style="text-decoration: none"
+              <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a class="achicar-mail" style="text-decoration: none"
                 href="mailto:nicolasemanuelmorales@hotmail.com">Nicolasemanuelmorales@hotmail.com</a>
             </p>
             <p>
@@ -218,7 +218,7 @@
       <div id="der" class="w3-twothird">
         <div id="cuadro-der-exp-lab" class="w3-container w3-card w3-white w3-margin-bottom w3-text-grey">
           <h2 class=" w3-padding-16">
-            <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiencia laboral
+            <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><span class="lang" key="ExperienciaTitulo">Experiencia laboral</span>
           </h2>
           <div class="w3-container">
             <h5>
@@ -226,8 +226,8 @@
                 href="https://epidata.net/">Epidata</a>
             </h5>
             <h6 class="w3-text-teal">
-              <i class="fa fa-calendar fa-fw w3-margin-right"></i>Agosto 2019  - 
-              <span class="w3-tag w3-teal w3-round">Actualmente</span>
+              <i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="lang" key="Agosto">Agosto</span> 2019  - 
+              <span class="w3-tag w3-teal w3-round"></i><span class="lang" key="Actualmente">Actualmente</span></span>
             </h6>
             <div>Java - JUnit</div>
             <div>Angular 4 - React.JS - React Native</div>
@@ -236,12 +236,13 @@
             <hr />
           </div>
           <div class="w3-container">
-            <h5><b>Servicio de atención al cliente</b> - Jet Comummunications S.A.</h5>
+            <h5><b><span class="lang" key="puesto2">Servicio de atención al cliente</span></b> - Jet Comummunications S.A.</h5>
             <h6 class="w3-text-teal">
-              <i class="fa fa-calendar fa-fw w3-margin-right"></i>Abril 2015 -
-              Octubre 2018
+              <i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="lang" key="Abril">Abril</span> 2015 -
+              <span class="lang" key="Octubre">Octubre</span> 2018
             </h6>
             <p>
+              <span class="lang" key="descPuesto2P1">
               Trámites online -
               Prestamos -
               Venta de tarjetas de debito recargables -
@@ -251,19 +252,21 @@
               Manejo de fotocopiadora -
               Cierre de caja y stock -
               Seguimiento y control de caja en sector Rapipago.
+            </span>
             </p>
-            <p>Aproximadamente un 1 año en puesto de encargado de turno, a cargo de 5 personas.</p>
+            <p><span class="lang" key="descPuesto2P2">Aproximadamente un 1 año en puesto de encargado de turno, a cargo de 5 personas.</span></p>
             <hr />
           </div>
           <div class="w3-container">
             <h5><b>Soporte técnico | Call center</b> - Contactcom</h5>
             <h6 class="w3-text-teal">
-              <i class="fa fa-calendar fa-fw w3-margin-right"></i>Noviembre 2014 -
-              Enero 2015
+              <i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="lang" key="Noviembre">Noviembre</span> 2014 -
+              <span class="lang" key="Enero">Enero</span> 2015
             </h6>
             <p>
-              Soporte técnico en un call center sobre los 3 servicios que brinda la empresa Telecentro (Internet,
-              Telefonía, TV)
+              <span class="lang" key="descPuesto3"> Soporte técnico en un call center sobre los 3 servicios que brinda la empresa Telecentro (Internet,
+              Telefonía, TV)</span>
+
             </p>
           </div>
           <br>
@@ -580,6 +583,7 @@
   </footer>
   <script src="js/principal.js"></script>
   <script src="js/JQuery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
     $(window).resize(function () {
       if($(window).width() > 600){
@@ -600,7 +604,48 @@
         $("#cuadro-izq").css({ minHeight:"" });
       }
     });
-  </script>
+
+$('#myonoffswitch2').change(function() {
+        if($(this).is(":checked")) {
+          $('.lang').each(function(index, item) {
+          $(this).text(arrLang["arg"][$(this).attr('key')]);
+        });        }else{
+          $('.lang').each(function(index, item) {
+          $(this).text(arrLang["en"][$(this).attr('key')]);
+        });
+        }
+    });
+
+
+    var arrLang = {
+      'en': {
+        'ExperienciaTitulo': 'Work experience',
+        'Agosto': 'August',
+        'Actualmente': 'Nowadays',
+        'puesto2': 'Customer Service',
+        'descPuesto2P1': 'Online procedures - Loans - Sale of reloadable debit cards - Money transfers to the interior and exterior of the country - Ticket sales - Upload system - Photocopier management - Cash and stock closing - Cash monitoring and control in Rapipago sector.',
+        'descPuesto2P2': 'Approximately 1 year in a shift manager position, in charge of 5 people.',
+        'descPuesto3': 'Technical support in a call center on the 3 services provided by the Telecentro company (Internet, Telephony, TV).',
+        'Abril': 'April',
+        'Octubre': 'October',
+        'Noviembre': 'November ',
+        'Enero': 'January',
+      },
+      'arg': {
+        'ExperienciaTitulo': 'Experiencia laboral',
+        'Agosto': 'Agosto',
+        'Actualmente': 'Actualmente',
+        'puesto2': 'Servicio de atención al cliente',
+        'descPuesto2P1': 'Trámites online - Prestamos - Venta de tarjetas de debito recargables - Giros al interior y exterior del pais - Venta de pasajes - Sistema de sube - Manejo de fotocopiadora - Cierre de caja y stock - Seguimiento y control de caja en sector Rapipago.',
+        'descPuesto2P2': 'Aproximadamente un 1 año en puesto de encargado de turno, a cargo de 5 personas.',
+        'descPuesto3': 'Soporte técnico en un call center sobre los 3 servicios que brinda la empresa Telecentro (Internet, Telefonía, TV).',
+        'Abril': 'Abril',
+        'Octubre': 'Octubre',
+        'Noviembre': 'Noviembre',
+        'Enero': 'Enero',
+      }
+    };
+    </script>
 </body>
 
 </html>
