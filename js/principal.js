@@ -210,7 +210,7 @@ $('#myonoffswitch2').change(function() {
         'EnCurso': 'En Curso',
         'Tec': 'Técnico Universitario en Desarrollo Web',
         'Redes': 'Instalador de redes informaticas',
-        'Pc': 'Enero',
+        'Pc': 'Reparación de PC',
         'Bachiller': 'Bachiller con orientación en Economía & Administración',
         'Proyectos': 'Proyectos',
         'Proyecto1T': 'Aproximadamente 3 Mes',
