@@ -8,8 +8,8 @@ h5,
 h6 {
   font-family: "Roboto", sans-serif;
 }
-.hr{
-  border-color: #514f4f !important;  
+.hr {
+  border-color: #514f4f !important;
 }
 .negro-oscuro {
   background: #181818;
@@ -32,26 +32,24 @@ h6 {
 .text-center {
   text-align: center !important;
 }
-.arreglo-switch-tema{
-    padding-top: 5px;
-    padding-left: 3px;
+.arreglo-switch-tema {
+  padding-top: 5px;
+  padding-left: 3px;
 }
-
-.arreglo-switch-idioma{
-    padding-top: 5px;
-    padding-right: 3px;
+.arreglo-switch-idioma {
+  padding-top: 5px;
+  padding-right: 3px;
 }
-
 @media only screen and (max-width: 600px) {
   .display-none {
-    display: none; 
+    display: none;
   }
-  .achicar-mail{
-    font-size: 14px!important;
+  .achicar-mail {
+    font-size: 14px !important;
   }
 }
 @media only screen and (min-width: 600px) {
   .display-block {
-    display: none; 
+    display: none;
   }
 }
