@@ -127,9 +127,14 @@ function cargaDeCookies() {
     cambiarAOscuro();
     document.getElementById("myonoffswitch").checked = true;
   }
+  if ($(window).width() > 600) {
+    var h = document.getElementById("der").clientHeight;
+    $("#cuadro-izq").css({ minHeight: h + "px" });
+  }
+  else {
+    $("#cuadro-izq").css({ minHeight: "" });
+  }
 }
-
-
 $(window).resize(function () {
   if ($(window).width() > 600) {
     var h = document.getElementById("der").clientHeight;
@@ -139,17 +144,6 @@ $(window).resize(function () {
     $("#cuadro-izq").css({ minHeight: "" });
   }
 });
-
-$(document).ready(function () {
-  if ($(window).width() > 600) {
-    var h = document.getElementById("der").clientHeight;
-    $("#cuadro-izq").css({ minHeight: h + "px" });
-  }
-  else {
-    $("#cuadro-izq").css({ minHeight: "" });
-  }
-});
-
 $('#myonoffswitch2').change(function () {
   if ($(this).is(":checked")) {
     $('.lang').each(function (index, item) {
