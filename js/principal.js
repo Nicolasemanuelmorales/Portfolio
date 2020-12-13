@@ -29,6 +29,15 @@ function cambiarAOscuro() {
   document.getElementById("footer").classList.add('blanco-falso');
 }
 
+(function() {
+  setTimeout(function(){ 
+    document.getElementById("openModal").classList.add('dn');
+    document.getElementById("izq").classList.remove('dn');
+    document.getElementById("der").classList.remove('dn');
+    document.getElementById("footer").classList.remove('dn');
+  }, 2000);
+})();
+
 function cambiarAClaro() {
   setCookie("Oscuro", "false");
   setCookie("Claro", "true");

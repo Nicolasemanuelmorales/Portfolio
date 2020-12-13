@@ -8,13 +8,22 @@
 <link rel="stylesheet" href="css/w3.css" />
 <link rel="stylesheet" href="css/estilos.css" />
 <link rel="stylesheet" href="css/switch.css" />
+<link rel="stylesheet" href="css/loader.css" />
 <link rel="stylesheet" href="font/roboto.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 <body onload="cargaDeCookies()" id="body" class="w3-light-grey">
+
+  <div id="openModal" class="modalDialog">
+    <div>
+      <div id="preloader">
+        <div id="loader"></div>
+      </div>
+    </div>
+  </div>
   <div class="w3-content w3-margin-top" style="max-width: 1400px">
     <div class="w3-row-padding">
-      <div id="izq" class="w3-third">
+      <div id="izq" class="w3-third dn">
         <div id="cuadro-izq" class="w3-white w3-text-grey w3-card-4">
           <div class="w3-display-container">
             <img src="img/perfil2.png" style="width: 100%" alt="Nicolás Emanuel Morales" />
@@ -234,7 +243,7 @@
         </div>
         <br />
       </div>
-      <div id="der" class="w3-twothird">
+      <div id="der" class="w3-twothird dn">
         <div id="cuadro-der-exp-lab" class="w3-container w3-card w3-white w3-margin-bottom w3-text-grey">
           <h2 class=" w3-padding-16">
             <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><span class="lang"
@@ -617,7 +626,7 @@
       </div>
     </div>
   </div>
-  <footer id="footer" class="w3-container w3-teal w3-center w3-margin-top ">
+  <footer id="footer" class="w3-container w3-teal w3-center w3-margin-top dn">
     <p><span class="lang" key="Footer"></span></p>
     <a href="https://www.facebook.com/NiqoMorales/" target="_blank"><i
         class=" w3-xlarge fa fa-facebook-official w3-hover-opacity cursor-pointer"></i></a>
