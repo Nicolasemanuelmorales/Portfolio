@@ -1,7 +1,7 @@
-@keyframes load {
+@-webkit-keyframes load {
     0%{
         opacity: 0.08;
-				filter: blur(5px);
+				filter: blur(3px);
 				letter-spacing: 3px;
         }
     100%{
@@ -15,8 +15,8 @@
 	height:100%;
 	margin: auto;
 	font-family: Helvetica, sans-serif, Arial;
-	animation: load 0.5s infinite 0s ease-in-out;
-	animation-direction: alternate;
+	-webkit-animation: load 0.5s infinite 0s ease-in-out;
+	-webkit-animation-direction: alternate;
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
     color: #009688 ;
     font-size: 230px;
