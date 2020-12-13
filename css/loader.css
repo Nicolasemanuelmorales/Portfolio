@@ -7,6 +7,24 @@
     100%{
         }
 }
+@-moz-keyframes load {
+    0%{
+        opacity: 0.08;
+				filter: blur(3px);
+				letter-spacing: 3px;
+        }
+    100%{
+        }
+}
+@-o-keyframes load {
+    0%{
+        opacity: 0.08;
+				filter: blur(3px);
+				letter-spacing: 3px;
+        }
+    100%{
+        }
+}
 
 .animate {
 	display:flex;
@@ -15,8 +33,12 @@
 	height:100%;
 	margin: auto;
 	font-family: Helvetica, sans-serif, Arial;
-	-webkit-animation: load 0.5s infinite 0s ease-in-out;
-	-webkit-animation-direction: alternate;
+    -webkit-animation: load 0.5s infinite 0s ease-in-out;
+    -moz-animation: load 0.5s infinite 0s ease-in-out;
+    -o-animation: load 0.5s infinite 0s ease-in-out;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
     color: #009688 ;
     font-size: 230px;
@@ -28,8 +50,12 @@
     margin-top: -80px;
 	height:100%;
 	font-family: Helvetica, sans-serif, Arial;
-	animation: load 0.5s infinite 0s ease-in-out;
-	animation-direction: alternate;
+    -webkit-animation: load 0.5s infinite 0s ease-in-out;
+    -moz-animation: load 0.5s infinite 0s ease-in-out;
+    -o-animation: load 0.5s infinite 0s ease-in-out;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
     color: #ffffff ;
     font-size: 200px;
@@ -41,8 +67,12 @@
     margin-top: -80px;
 	height:100%;
 	font-family: Helvetica, sans-serif, Arial;
-	animation: load 0.5s infinite 0s ease-in-out;
-	animation-direction: alternate;
+    -webkit-animation: load 0.5s infinite 0s ease-in-out;
+    -moz-animation: load 0.5s infinite 0s ease-in-out;
+    -o-animation: load 0.5s infinite 0s ease-in-out;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
     color: #000000 ;
     font-size: 200px;
