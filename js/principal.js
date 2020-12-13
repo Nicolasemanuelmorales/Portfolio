@@ -1,3 +1,4 @@
+
 function cambiarAOscuro() {
   setCookie("Claro", "false");
   setCookie("Oscuro", "true");
@@ -222,3 +223,12 @@ var arrLang = {
     'St': 'Soporte técnico | Call center',
   }
 };
+
+
+$( document ).ready(function() {
+  setTimeout(function(){ 
+    document.getElementById("izq").classList.remove('dn');
+    document.getElementById("der").classList.remove('dn');
+    document.getElementById("footer").classList.remove('dn');
+  }, 1000);
+});
