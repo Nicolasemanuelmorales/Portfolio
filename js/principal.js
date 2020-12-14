@@ -227,8 +227,9 @@ var arrLang = {
 
 $( document ).ready(function() {
   setTimeout(function(){ 
+    document.getElementById("preloader").classList.add('dn');
     document.getElementById("izq").classList.remove('dn');
     document.getElementById("der").classList.remove('dn');
     document.getElementById("footer").classList.remove('dn');
-  }, 1000);
+  }, 2500);
 });

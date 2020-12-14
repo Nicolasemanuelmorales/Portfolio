@@ -69,14 +69,14 @@ h6 {
   position: relative;
   left: 50%;
   top: 50%;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 -100px;
   border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #9370DB;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  border: 10px solid transparent;
+  border-top-color: #009688;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
 }
 #loader:before {
   content: "";
@@ -86,10 +86,10 @@ h6 {
   right: 5px;
   bottom: 5px;
   border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #BA55D3;
-  -webkit-animation: spin 3s linear infinite;
-  animation: spin 3s linear infinite;
+  border: 10px solid transparent;
+  border-top-color: #009688;
+  -webkit-animation: spin 0.85s linear infinite reverse;
+  animation: spin 0.85s linear infinite reverse;
 }
 #loader:after {
   content: "";
@@ -99,10 +99,10 @@ h6 {
   right: 15px;
   bottom: 15px;
   border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #FF00FF;
-  -webkit-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite;
+  border: 10px solid transparent;
+  border-top-color: #009688;
+  -webkit-animation: spin 3.0s linear infinite;
+  animation: spin 3.0s linear infinite;
 }
 @-webkit-keyframes spin {
   0%   {
