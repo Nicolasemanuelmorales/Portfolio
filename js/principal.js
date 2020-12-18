@@ -1,3 +1,16 @@
+$( document ).ready(function() {
+  setTimeout(function(){ 
+    document.getElementById("preloader").classList.add('dn');
+    document.getElementById("izq").classList.remove('dn');
+    document.getElementById("der").classList.remove('dn');
+    document.getElementById("footer").classList.remove('dn');
+  }, 2500);
+
+  setTimeout(function(){ 
+    var h = document.getElementById("der").clientHeight;
+    $("#cuadro-izq").css({ minHeight: h + "px" });
+  }, 3000);
+}); 
 
 function cambiarAOscuro() {
   setCookie("Claro", "false");
@@ -71,9 +84,19 @@ function CambiarEstadoIdioma() {
   if (document.getElementById("myonoffswitch2").checked === true) {
     setCookie("Arg", "false");
     setCookie("En", "true");
+
+    var styleElem = document.head.appendChild(document.createElement("style"));
+    styleElem.innerHTML = "span.onoffswitch-inner:before {content: 'Oscuro';}";
+    var styleElem2 = document.head.appendChild(document.createElement("style"));
+    styleElem2.innerHTML = "span.onoffswitch-inner:after {content: 'Claro';}";
   } else {
     setCookie("En", "false");
     setCookie("Arg", "true");
+
+    var styleElem = document.head.appendChild(document.createElement("style"));
+    styleElem.innerHTML = "span.onoffswitch-inner:before {content: 'Dark';}";
+    var styleElem2 = document.head.appendChild(document.createElement("style"));
+    styleElem2.innerHTML = "span.onoffswitch-inner:after {content: 'Light';}";
   }
 }
 
@@ -112,12 +135,20 @@ function cargaDeCookies() {
       $(this).text(arrLang["en"][$(this).attr('key')]);
     });
     document.getElementById("myonoffswitch2").checked = false;
+    var styleElem = document.head.appendChild(document.createElement("style"));
+    styleElem.innerHTML = "span.onoffswitch-inner:before {content: 'Dark';}";
+    var styleElem2 = document.head.appendChild(document.createElement("style"));
+    styleElem2.innerHTML = "span.onoffswitch-inner:after {content: 'Light';}";
   }
   else {
     $('.lang').each(function (index, item) {
       $(this).text(arrLang["arg"][$(this).attr('key')]);
     });
     document.getElementById("myonoffswitch2").checked = true;
+    var styleElem = document.head.appendChild(document.createElement("style"));
+    styleElem.innerHTML = "span.onoffswitch-inner:before {content: 'Oscuro';}";
+    var styleElem2 = document.head.appendChild(document.createElement("style"));
+    styleElem2.innerHTML = "span.onoffswitch-inner:after {content: 'Claro';}";
   }
 
   if (Claro == "true") {
@@ -127,13 +158,6 @@ function cargaDeCookies() {
   else {
     cambiarAOscuro();
     document.getElementById("myonoffswitch").checked = true;
-  }
-  if ($(window).width() > 600) {
-    var h = document.getElementById("der").clientHeight;
-    $("#cuadro-izq").css({ minHeight: h + "px" });
-  }
-  else {
-    $("#cuadro-izq").css({ minHeight: "" });
   }
 }
 $(window).resize(function () {
@@ -223,13 +247,3 @@ var arrLang = {
     'St': 'Soporte técnico | Call center',
   }
 };
-
-
-$( document ).ready(function() {
-  setTimeout(function(){ 
-    document.getElementById("preloader").classList.add('dn');
-    document.getElementById("izq").classList.remove('dn');
-    document.getElementById("der").classList.remove('dn');
-    document.getElementById("footer").classList.remove('dn');
-  }, 2500);
-});
