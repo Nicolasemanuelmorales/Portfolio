@@ -42,17 +42,16 @@
   <link rel="stylesheet" href="css/switch.css" />
   <link rel="stylesheet" href="font/roboto.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
 </head>
 
 <body onload="cargaDeCookies()" id="body" class="w3-light-grey">
   <div id="preloader">
     <div id="loader"></div>
   </div>
-  <div class="w3-content w3-margin-top" style="max-width: 1400px">
+  <div class="w3-content w3-margin-top mw">
     <div class="w3-row-padding">
       <div id="izq" class="w3-third dn">
-        <div id="cuadro-izq" onload="cargaDeCookies2()" class="w3-white w3-text-grey w3-card-4">
+        <div id="cuadro-izq" class="w3-white w3-text-grey w3-card-4">
           <div class="w3-display-container">
             <img src="img/perfil2.png" style="width: 100%" alt="Nicolás Emanuel Morales" />
             <div class="w3-display-topleft arreglo-switch-tema">
@@ -75,42 +74,38 @@
                 </label>
               </div>
             </div>
-            <div style="background: rgba(40, 40, 40, 0.6); width: 100%;"
-              class="w3-display-bottomleft w3-container blanco-falso text-center">
+            <div class="w3-display-bottomleft w3-container blanco-falso text-center boxName">
               <h2>Nicolás Emanuel Morales</h2>
             </div>
           </div>
           <div class="w3-container">
-            <p>
+            <p class="mt16">
               <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Full Stack Web Developer
             </p>
             <p>
-              <a target="_blank" style="text-decoration: none"
+              <a target="_blank"
                 href="https://www.google.com/maps/place/San+Justo,+Provincia+de+Buenos+Aires/@-34.6879526,-58.5989153,13z/data=!3m1!4b1!4m5!3m4!1s0x95bcc622f9709805:0xb5f373c7721a50a5!8m2!3d-34.6874084!4d-58.5632629"><i
                   class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>San
                 Justo, Buenos Aires, Argentina</a>
             </p>
             <p>
-              <a class="achicar-mail" style="text-decoration: none" href="mailto:nicolasemanuelmorales@hotmail.com"><i
+              <a class="achicar-mail" href="mailto:nicolasemanuelmorales@hotmail.com"><i
                   class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Nicolasemanuelmorales@hotmail.com</a>
             </p>
             <p>
-              <a target="_blank" style="text-decoration: none"
-                href="https://api.whatsapp.com/send?phone=+541149408340"><i
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=+541149408340"><i
                   class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>11 4940-8340</a>
             </p>
             <p>
-              <a style="text-decoration: none;" href="https://www.linkedin.com/in/Nicolasemanuelmorales/"
-                target="_blank"><i
+              <a href="https://www.linkedin.com/in/Nicolasemanuelmorales/" target="_blank"><i
                   class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i>Nicolasemanuelmorales</a>
             </p>
             <p>
-              <a style="text-decoration: none;"
-                href="https://drive.google.com/file/d/1qHGpRBE0Lc0izsejE-CKB2h5Ik-lKdmB/view?usp=sharing"
+              <a href="https://drive.google.com/file/d/1qHGpRBE0Lc0izsejE-CKB2h5Ik-lKdmB/view?usp=sharing"
                 target="_blank"><i class="fa fa-download fa-fw w3-margin-right w3-large w3-text-teal"></i>Curriculum
                 Vitae.pdf</a>
             </p>
-            <span class="display-none">
+            <div class="display-none">
               <hr />
               <p class="w3-large">
                 <b><i class="fa fa-cogs fa-fw w3-margin-right w3-text-teal"></i>Skills</b>
@@ -266,8 +261,8 @@
               <div class="back-blanco-falso w3-round-xlarge">
                 <div class="w3-round-xlarge w3-teal" style="height: 24px; width: 20%"></div>
               </div>
-            </span>
-            <br />
+            </div>
+
           </div>
         </div>
         <br />
@@ -280,17 +275,83 @@
           </h2>
           <div class="w3-container">
             <h5>
-              <b>Full Stack Web Developer</b> - <a target="_blank" style="text-decoration: none;"
-                href="https://epidata.net/">Epidata</a>
+              <b>Full Stack Web Developer</b> - <a target="_blank" href="https://epidata.net/">Epidata</a>
             </h5>
             <h6 class="w3-text-teal">
               <i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="lang" key="Agosto"></span> 2019  - 
               <span class="w3-tag w3-teal w3-round"></i><span class="lang" key="Actualmente"></span></span>
             </h6>
-            <div>Java - JUnit</div>
-            <div>Angular 4 - React.JS - React Native</div>
-            <div>HTML - CSS - Bootstrap - Material ui</div>
-            <div> DBeaver - Intellij - Visual Studio Code - GitLab</div>
+            <div class="boxcards mt16">
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/react.svg" /> 
+                REACT.JS
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/react.svg" /> 
+                REACT NATIVE
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/svelte.svg" /> 
+                SVELTE
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/angular.svg" /> 
+                ANGULAR 4
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/materialUI.svg" /> 
+                MATERIAL-UI
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/paper.png" /> 
+                PAPER
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/expo.png" /> 
+                EXPO
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/html.svg" /> 
+                HTML
+              </div>
+              <div class="buttonCode w3-text-white">
+                <div><img width="15" class="imgCenter" src="./img/icons/css.svg" /> 
+                  CSS
+                </div>
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/js.svg" /> 
+                JAVASCRIPT
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/bootstrap.png" /> 
+                BOOTSTRAP
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/java.svg" /> 
+                JAVA
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/spring.png" /> 
+                SPRING
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/junit5-logo.png" /> 
+                JUNIT
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/mysql.png" /> 
+                MYSQL
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/gitlab.svg" /> 
+                GITLAB
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/github.png" /> 
+                GITHUB
+              </div>
+            </div>
             <hr />
           </div>
           <div class="w3-container">
@@ -326,17 +387,7 @@
               key="Educacion"></span>
           </h2>
           <div class="w3-container">
-            <h5><b><a style="text-decoration: none;" href="https://www.caprisummercamp.com/" target="_blank">Instituto
-                  Capri - School of English</a></b></h5>
-            <h6 class="w3-text-teal">
-              <i class="fa fa-calendar fa-fw w3-margin-right"></i>2020  - 
-              <span class="w3-tag w3-teal w3-round"><span class="lang" key="EnCurso"></span></span>
-
-            </h6>
-            <hr />
-          </div>
-          <div class="w3-container">
-            <h5><b> <a style="text-decoration: none;" href="https://www.unlam.edu.ar/" target="_blank">Universidad
+            <h5><b> <a href="https://www.unlam.edu.ar/" target="_blank">Universidad
                   Nacional de La Matanza</a></b></h5>
             <h6 class="w3-text-teal">
               <i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2020
@@ -345,21 +396,109 @@
                 class="w3-text-teal fa fa-graduation-cap  fa-fw w3-margin-right"></i><span class="lang"
                 key="Tec"></span></span></p>
             <p class="w3-text-teal"><i title="Promedio"
-                class="w3-text-teal fa fa-bar-chart   fa-fw w3-margin-right"></i>8.45</p>
+                class="w3-text-teal fa fa-bar-chart   fa-fw w3-margin-right"></i>8.45
+            </p>
             <p>
-            <div>ASP.NET (.NET Framework ) - C# - ADO.NET - Entity Framework - API REST </div>
-            <div>Java - Spring MVC - Hibernate - JUnit - Travis - XML - Thymeleaf - JSP</div>
-            <div>PHP - Framework MVC</div>
-            <div>ML5.Js - P5.Js (IA)</div>
-            <div>HTML - CSS - Bootstrap - Materialize</div>
-            <div>JavaScript - JQuery</div>
-            <div>MySQL - SQL Server - SQL</div>
-            <div>GIT - Eclipse - Visual Studio - Docker - Illustrator - Xampp - Workbench</div>
+            <div class="boxcards">
+              <div class="buttonCode w3-text-white">
+                <img width="30" class="imgCenter" src="./img/icons/php.svg" /> 
+                PHP
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/il.svg" /> 
+                ILLUSTRATOR
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/materialize-css-1.svg" /> 
+                MATERIALIZE
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/html.svg" /> 
+                HTML
+              </div>
+              <div class="buttonCode w3-text-white">
+                <div><img width="15" class="imgCenter" src="./img/icons/css.svg" /> 
+                  CSS
+                </div>
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="19" class="imgCenter" src="./img/icons/bootstrap.png" /> 
+                BOOTSTRAP
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/js.svg" /> 
+                JAVASCRIPT
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/jquery-4.svg" /> 
+                JQUERY
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="30" class="imgCenter" src="./img/icons/ml5.png" /> 
+                ML5.JS
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/pl5.png" /> 
+                PL5.JS
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/java.svg" /> 
+                JAVA
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/spring.png" /> 
+                SPRING
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/HIBERNATE.svg" /> 
+                HIBERNATE
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/mysql.png" /> 
+                MYSQL
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/jsp.png" /> 
+                JSP
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/thymeleaf.png" /> 
+                THYMELEAF
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/junit5-logo.png" /> 
+                JUNIT
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/mockito.ico" /> 
+                MOCKITO
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/travis.png" /> 
+                TRAVIS CI
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="25" class="imgCenter" src="./img/icons/net.png" /> 
+                .NET
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/c.png" /> 
+                C#
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/sqlserver.png" /> 
+                SQL SERVER
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/github.png" /> 
+                GITHUB
+              </div>
+            </div>
             </p>
             <hr />
           </div>
           <div class="w3-container">
-            <h5><b><a style="text-decoration: none;" href="http://www.abc.gob.ar/" target="_blank">Dirección General de
+            <h5><b><a href="http://www.abc.gob.ar/" target="_blank">Dirección General de
                   Cultura y Educación de la Provincia de Buenos Aires</a></b></h5>
             <h6 class="w3-text-teal">
               <i class="fa fa-calendar fa-fw w3-margin-right"></i>2013
@@ -369,7 +508,7 @@
             <hr />
           </div>
           <div class="w3-container">
-            <h5><b><a style="text-decoration: none;" href="http://www.abc.gob.ar/" target="_blank">Dirección General de
+            <h5><b><a href="http://www.abc.gob.ar/" target="_blank">Dirección General de
                   Cultura y Educación de la Provincia de Buenos Aires</a></b></h5>
             <h6 class="w3-text-teal">
               <i class="fa fa-calendar fa-fw w3-margin-right"></i>2013
@@ -379,8 +518,8 @@
             <hr />
           </div>
           <div class="w3-container">
-            <h5><b> <a style="text-decoration: none;" href="https://www.institutoalmafuerte.edu.ar/"
-                  target="_blank">Instituto Educacional
+            <h5><b> <a href="https://www.institutoalmafuerte.edu.ar/" target="_blank">Instituto
+                  Educacional
                   Almafuerte</a></b></h5>
             <h6 class="w3-text-teal">
               <i class="fa fa-calendar fa-fw w3-margin-right"></i>2013
@@ -397,6 +536,117 @@
           </h2>
           <div class="w3-container">
             <h5>
+              <b>ReactNativeWithCats</b>
+            </h5>
+            <div class="w3-margin-bottom  w3-text-teal display-none">
+              <i title="Integrantes" class="w3-text-teal fa fa-user fa-fw "></i>1
+              <i class="w3-text-teal fa fa-clock-o  fa-fw  w3-margin-left"></i><span class="lang"
+                key="ProyectoDogT"></span>
+              <i class="w3-text-teal fa fa-info-circle w3-margin-left fa-fw "></i> <span class="lang" key="EJS"></span>
+            </div>
+            <div class="w3-margin-bottom w3-text-teal display-block">
+              <div><i title="Integrantes" class="w3-text-teal fa fa-user fa-fw "></i> 1</div>
+              <div><i class="w3-text-teal fa fa-clock-o fa-fw"></i><span class="lang" key="ProyectoDogT"></span></div>
+              <div><i class="w3-text-teal fa fa-info-circle  fa-fw "></i> <span class="lang" key="EJS"></span></div>
+            </div>
+            <div class="boxcards">
+
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/react.svg" /> 
+                REACT NATIVE
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/typescript.svg" /> 
+                TYPESCRIPT
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/paper.png" /> 
+                PAPER
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/expo.png" /> 
+                EXPO
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/redux.svg" /> 
+                REDUX
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/axios.png" /> 
+                AXIOS
+              </div>
+            </div>
+
+            <div class="descript"><span class="lang" key="Cat"></span></div>
+            <a target="_blank" href="https://github.com/Nicolasemanuelmorales/ReactNativeWithCats"><button
+                class="w3-margin-top wButton w3-button w3-circle w3-round-large w3-padding-small w3-teal">
+                <i class=" fa fa-github fa-fw w3-large "></i>GitHub
+              </button></a>
+            <a target="_blank" href="https://nicolasemanuelmorales.github.io/ReactNativeWithCatsEmulator/">
+              <button
+                class="w3-margin-top wButton w3-button w3-circle w3-round-large w3-margin-left w3-padding-small w3-teal">
+                <i class=" fa fa-globe fa-fw w3-large "></i> Web
+              </button>
+            </a>
+            <hr />
+          </div>
+
+
+          <div class="w3-container">
+            <h5>
+              <b>ReactJSWithDogs</b>
+            </h5>
+            <div class="w3-margin-bottom  w3-text-teal display-none">
+              <i title="Integrantes" class="w3-text-teal fa fa-user fa-fw "></i>1
+              <i class="w3-text-teal fa fa-clock-o  fa-fw  w3-margin-left"></i><span class="lang"
+                key="ProyectoDogT"></span>
+              <i class="w3-text-teal fa fa-info-circle w3-margin-left fa-fw "></i> <span class="lang" key="EJS"></span>
+            </div>
+            <div class="w3-margin-bottom w3-text-teal display-block">
+              <div><i title="Integrantes" class="w3-text-teal fa fa-user fa-fw "></i> 1</div>
+              <div><i class="w3-text-teal fa fa-clock-o fa-fw"></i><span class="lang" key="ProyectoDogT"></span></div>
+              <div><i class="w3-text-teal fa fa-info-circle  fa-fw "></i> <span class="lang" key="EJS"></span></div>
+            </div>
+            <div class="boxcards">
+
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/react.svg" /> 
+                REACT.JS
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/typescript.svg" /> 
+                TYPESCRIPT
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/materialUI.svg" /> 
+                MATERIAL-UI
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/redux.svg" /> 
+                REDUX
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/axios.png" /> 
+                AXIOS
+              </div>
+            </div>
+
+            <div class="descript"><span class="lang" key="Dog"></span></div>
+            <a target="_blank" href="https://github.com/Nicolasemanuelmorales/ReactJSWithDogs"><button
+                class="w3-margin-top wButton w3-button w3-circle w3-round-large w3-padding-small w3-teal">
+                <i class=" fa fa-github fa-fw w3-large "></i>GitHub
+              </button></a>
+            <a target="_blank" href="https://nicolasemanuelmorales.github.io/ReactJSWithDogs/#/home">
+              <button
+                class="w3-margin-top wButton w3-button w3-circle w3-round-large w3-margin-left w3-padding-small w3-teal">
+                <i class=" fa fa-globe fa-fw w3-large "></i> Web
+              </button>
+            </a>
+            <hr />
+          </div>
+
+          <div class="w3-container">
+            <h5>
               <b>Portfolio</b>
             </h5>
             <div class="w3-margin-bottom  w3-text-teal display-none">
@@ -405,14 +655,36 @@
                 key="Proyecto3T"></span>
             </div>
             <div class="w3-margin-bottom  w3-text-teal display-block">
-              <div><i title="Integrantes" class="w3-text-teal fa fa-user fa-fw "></i> 4</div>
-              <div><i class="w3-text-teal fa fa-clock-o  fa-fw"></i><span class="lang" key="Proyecto1T"></span></div>
-              <div><i class="w3-text-teal fa fa-info-circle  fa-fw "></i> <span class="lang" key="Proyecto1Inf"></span>
+              <div><i title="Integrantes" class="w3-text-teal fa fa-user fa-fw "></i> 1</div>
+              <div><i class="w3-text-teal fa fa-clock-o  fa-fw"></i><span class="lang" key="Proyecto3T"></span></div>
+
+            </div>
+            <div class="boxcards">
+
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/html.svg" /> 
+                HTML
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/css.svg" /> 
+                CSS
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/js.svg" /> 
+                JAVASCRIPT
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class=" imgCenter" src="./img/icons/jquery-4.svg" /> 
+                JQUERY
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/w3.png" /> 
+                W3 CSS
               </div>
             </div>
-            <div>HTML - CSS - JQuery - JavaScript - W3 CSS</div>
-            <a target="_blank" href="https://github.com/Nicolasemanuelmorales/Portfolio"><button style="min-width: 90px"
-                class="w3-margin-top w3-button w3-circle w3-round-large w3-padding-small w3-teal">
+
+            <a target="_blank" href="https://github.com/Nicolasemanuelmorales/Portfolio"><button
+                class="w3-margin-top wButton w3-button w3-circle w3-round-large w3-padding-small w3-teal">
                 <i class=" fa fa-github fa-fw w3-large "></i>GitHub
               </button></a>
             <hr />
@@ -434,18 +706,63 @@
               <div><i class="w3-text-teal fa fa-info-circle  fa-fw "></i> <span class="lang" key="Proyecto1Inf"></span>
               </div>
             </div>
-            <div>Java - Spring MVC </div>
-            <div>MySQL - MongoDB</div>
-            <div>ML5.Js - P5.Js (IA)</div>
-            <div>HTML - CSS - JQuery - JavaScript - Bootstrap - Thymeleaf</div>
-            <a target="_blank" href="https://github.com/Nicolasemanuelmorales/RecyCloud"><button style="min-width: 90px"
-                class="w3-margin-top w3-button w3-circle w3-round-large w3-padding-small w3-teal">
+            <div class="boxcards">
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/java.svg" /> 
+                JAVA
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/spring.png" /> 
+                SPRING
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/thymeleaf.png" /> 
+                THYMELEAF
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/mysql.png" /> 
+                MYSQL
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/MongoDB.png" /> 
+                MONGODB
+              </div>
+
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/html.svg" /> 
+                HTML
+              </div>
+              <div class="buttonCode w3-text-white">
+                <div><img width="15" class="imgCenter" src="./img/icons/css.svg" /> 
+                  CSS
+                </div>
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/js.svg" /> 
+                JAVASCRIPT
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/jquery-4.svg" /> 
+                JQUERY
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="30" class="imgCenter" src="./img/icons/ml5.png" /> 
+                ML5.JS
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/pl5.png" /> 
+                PL5.JS
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/bootstrap.png" /> 
+                BOOTSTRAP
+              </div>
+            </div>
+            <a target="_blank" href="https://github.com/Nicolasemanuelmorales/RecyCloud"><button
+                class="w3-margin-top wButton w3-button w3-circle w3-round-large w3-padding-small w3-teal">
                 <i class=" fa fa-github fa-fw w3-large "></i>GitHub
               </button></a>
-            <button style="min-width: 90px;cursor: not-allowed;"
-              class="w3-margin-top w3-button w3-circle w3-round-large w3-margin-left w3-padding-small w3-teal">
-              <i class=" fa fa-globe fa-fw w3-large "></i> Web
-            </button>
+
             <hr />
           </div>
           <div class="w3-container">
@@ -465,18 +782,24 @@
               <div><i class="w3-text-teal fa fa-info-circle  fa-fw"></i> <span class="lang" key="Proyecto2Inf"></span>
               </div>
             </div>
-            <div>ASP.NET (.NET Framework ) - C# - ADO.NET - Entity Framework</div>
-            <div>API REST - JSON </div>
-            <div>SQL Server </div>
+            <div class="boxcards">
+              <div class="buttonCode w3-text-white">
+                <img width="25" class="imgCenter" src="./img/icons/net.png" /> 
+                .NET
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/c.png" /> 
+                C#
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/sqlserver.png" /> 
+                SQL SERVER
+              </div>
+            </div>
             <a target="_blank" href="https://github.com/Nicolasemanuelmorales/AyudandoAlProjimo"><button
-                style="min-width: 90px"
-                class="w3-margin-top w3-button w3-circle w3-round-large w3-padding-small w3-teal">
+                class="w3-margin-top wButton w3-button w3-circle w3-round-large w3-padding-small w3-teal">
                 <i class=" fa fa-github fa-fw w3-large "></i>GitHub
               </button></a>
-            <button style="min-width: 90px;cursor: not-allowed;"
-              class="w3-margin-top w3-button w3-circle w3-round-large w3-margin-left w3-padding-small w3-teal">
-              <i class=" fa fa-globe fa-fw w3-large "></i> Web
-            </button>
             <hr />
           </div>
           <div class="w3-container">
@@ -496,19 +819,61 @@
               <div><i class="w3-text-teal fa fa-info-circle  fa-fw"></i> <span class="lang" key="Proyecto3Inf"></span>
               </div>
             </div>
-            <div>Java - Spring MVC - Hibernet - JSP - XML </div>
-            <div>JUnit - Mockito - Travis</div>
-            <div>MySQL</div>
-            <div>HTML - CSS - JQuery - Bootstrap</div>
+            <div class="boxcards">
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/html.svg" /> 
+                HTML
+              </div>
+              <div class="buttonCode w3-text-white">
+                <div><img width="15" class="imgCenter" src="./img/icons/css.svg" /> 
+                  CSS
+                </div>
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="19" class="imgCenter" src="./img/icons/bootstrap.png" /> 
+                BOOTSTRAP
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/jquery-4.svg" /> 
+                JQUERY
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/mysql.png" /> 
+                MYSQL
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="15" class="imgCenter" src="./img/icons/java.svg" /> 
+                JAVA
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/spring.png" /> 
+                SPRING
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/HIBERNATE.svg" /> 
+                HIBERNATE
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/jsp.png" /> 
+                JSP
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/junit5-logo.png" /> 
+                JUNIT
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="20" class="imgCenter" src="./img/icons/mockito.ico" /> 
+                MOCKITO
+              </div>
+              <div class="buttonCode w3-text-white">
+                <img width="17" class="imgCenter" src="./img/icons/travis.png" /> 
+                TRAVIS CI
+              </div>
+            </div>
             <a target="_blank" href="https://github.com/Nicolasemanuelmorales/Ecommerce-MMD-A"><button
-                style="min-width: 90px"
-                class="w3-margin-top w3-button w3-circle w3-round-large w3-padding-small w3-teal">
+                class="w3-margin-top wButton w3-button w3-circle w3-round-large w3-padding-small w3-teal">
                 <i class=" fa fa-github fa-fw w3-large "></i>GitHub
               </button></a>
-            <button style="min-width: 90px;cursor: not-allowed;"
-              class="w3-margin-top w3-button w3-circle w3-round-large w3-margin-left w3-padding-small w3-teal">
-              <i class=" fa fa-globe fa-fw w3-large "></i> Web
-            </button>
           </div>
           <br>
           <br>
@@ -518,7 +883,6 @@
             <h2 class="w3-padding-16">
               <i class="fa fa-cogs fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Skills
             </h2>
-
             <p>JAVA</p>
             <div class="back-blanco-falso w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width: 80%">
@@ -671,7 +1035,6 @@
               <div class="w3-round-xlarge w3-teal" style="height: 24px; width: 20%"></div>
             </div>
             <br />
-
           </div>
         </span>
       </div>
