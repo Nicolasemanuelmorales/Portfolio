@@ -4,14 +4,14 @@ $(document).ready(function () {
     document.getElementById("izq").classList.remove("dn");
     document.getElementById("der").classList.remove("dn");
     document.getElementById("footer").classList.remove("dn");
-  }, 0000);
+  }, 2500);
 
   setTimeout(function () {
     if ($(window).width() > 583) {
       var h = document.getElementById("der").clientHeight;
       $("#cuadro-izq").css({ minHeight: h + "px" });
     }
-  }, 0000);
+  }, 3000);
 });
 
 function cambiarAOscuro() {
