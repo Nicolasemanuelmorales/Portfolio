@@ -4,14 +4,14 @@ $(document).ready(function () {
     document.getElementById("izq").classList.remove("dn");
     document.getElementById("der").classList.remove("dn");
     document.getElementById("footer").classList.remove("dn");
-  }, 2500);
+  }, 0000);
 
   setTimeout(function () {
-    if ($(window).width() > 600) {
+    if ($(window).width() > 583) {
       var h = document.getElementById("der").clientHeight;
       $("#cuadro-izq").css({ minHeight: h + "px" });
     }
-  }, 3000);
+  }, 0000);
 });
 
 function cambiarAOscuro() {
@@ -171,7 +171,7 @@ function cargaDeCookies() {
   }
 }
 $(window).resize(function () {
-  if ($(window).width() > 600) {
+  if ($(window).width() > 583) {
     var h = document.getElementById("der").clientHeight;
     $("#cuadro-izq").css({ minHeight: h + "px" });
   } else {

@@ -123,7 +123,6 @@ a {
   background-color: #222 !important;
   vertical-align: sub !important;
 }
-
 .boxcards {
   display: flex;
   flex-direction: row;
@@ -133,7 +132,6 @@ a {
 .descript {
   margin-top: 16px;
 }
-
 .imgCenter {
   vertical-align: sub !important;
 }
@@ -151,9 +149,18 @@ a {
 .mw {
   max-width: 1400px;
 }
-
 .wButton {
   width: 120px;
+}
+.infoGeneralBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.ellipse {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 @-webkit-keyframes spin {
   0% {
