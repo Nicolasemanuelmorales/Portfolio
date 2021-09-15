@@ -203,6 +203,10 @@ $("#myonoffswitch2").change(function () {
 
 var arrLang = {
   en: {
+    mmda: "University project in order to develop an Ecommerce.",
+    ayuda: "University project in order to develop a network of donations.",
+    recy: "The main idea of this university project was to raise awareness about recycling. For this we developed a website in which users can scan an object and in this way they would be indicated to what type of recycling it corresponded and to which recycling points they could take them. One of the main slogans was that the project had to be sustainable, so it was decided to develop in parallel an Ecommerce of products made with recyclable materials. Only recycling points could sell and users who recycled there were applied a discount on the final purchase price. To carry out this project, intensive research had to be carried out, both on the subject and having to use new tools for us, such as scanning objects by means of Artificial Intelligence.",
+    port: "The development of this responsive website and the technologies used were chosen in order to consolidate and deepen the knowledge it had. Also, while I had never used the W3 CSS framework, it was implemented in order to learn how to use and master it.",
     Dog: "This project was created with the intention of giving a talk at Epidata with a simple example, but with a complete tour accompanied by good practices. The project is documented to be able to build the development environment, create a project from scratch and be able to deploy with GitHub Pages.",
     Cat: "This project was created with the intention of giving a talk at Epidata with a simple example, but with a complete tour accompanied by good practices. The project is documented to be able to build the development environment, create a project from scratch and be able to deploy with Expo Snack.",
     EJS: "Simple example",
@@ -242,6 +246,11 @@ var arrLang = {
     St: "Technical support | Call center",
   },
   arg: {
+    mmda: "Proyecto universitario con la finalidad de desarrollar un Ecommerce.",
+    ayuda:
+      "Proyecto universitario con la finalidad de desarrollar una red de donaciones.",
+    recy: "La idea principal de este proyecto universitario era concientizar a la población sobre el reciclaje. Para ello desarrollamos una web en la cual los usuarios puedan escanear un objeto y de esta manera se les indicaría a que tipo de reciclaje correspondía y a que puntos de reciclaje podían llevarlos. Una de las consignas principales era que el proyecto debía ser sustentable, por lo que se optó por el desarrollo en paralelo de un Ecommerce de productos fabricados con materiales reciclables. Solo los puntos de reciclaje podían vender y los usuarios que reciclaban allí se les aplicaban un descuento en el precio final de la compra. Para realizar este proyecto, se tuvo que realizar una investigación intensiva, tanto sobre la temática como al tener que utilizar herramientas nuevas para nosotros, como el escaneo de objetos por medio de la Inteligencia Artificial.",
+    port: "La elaboración de esta web responsive y las tecnologías utilizadas se escogieron con el fin de afianzar y profundizar los conocimientos que tenía. Además, si bien nunca había utilizado el framework W3 CSS, se implementó con el fin de aprender a usarlo y dominarlo.",
     Dog: "Este proyecto fue creado con la intención de dar una charla en Epidata con un ejemplo sencillo, pero con un recorrido completo acompañado de buenas prácticas. El proyecto esta documentado para poder levantar el entorno de desarrollo, crear un proyecto desde cero y poder hacer un deploy con GitHub Pages.",
     Cat: "Este proyecto fue creado con la intención de dar una charla en Epidata con un ejemplo sencillo, pero con un recorrido completo acompañado de buenas prácticas. El proyecto esta documentado para poder levantar el entorno de desarrollo, crear un proyecto desde cero y poder hacer un deploy con Expo Snack.",
     EJS: "Ejemplo simple",
