@@ -18,6 +18,12 @@ function cambiarAOscuro() {
   setCookie("Claro", "false");
   setCookie("Oscuro", "true");
   $("hr").addClass("hr");
+
+  var berninis = document.querySelectorAll(".buttonCode");
+  for (var i = 0; i < berninis.length; i++) {
+    berninis[i].style.setProperty("background-color", "#222", "important");
+  }
+
   document.getElementById("body").classList.remove("w3-light-grey");
   document.getElementById("body").classList.add("negro-oscuro");
   document.getElementById("cuadro-izq").classList.remove("w3-white");
@@ -53,6 +59,11 @@ function cambiarAClaro() {
   setCookie("Oscuro", "false");
   setCookie("Claro", "true");
   $("hr").removeClass("hr");
+
+  var berninis = document.querySelectorAll(".buttonCode");
+  for (var i = 0; i < berninis.length; i++) {
+    berninis[i].style.setProperty("background-color", "#e8e8e8", "important");
+  }
   document.getElementById("body").classList.add("w3-light-grey");
   document.getElementById("body").classList.remove("negro-oscuro");
   document.getElementById("cuadro-izq").classList.add("w3-white");
