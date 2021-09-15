@@ -54,6 +54,9 @@ a {
   .achicar-mail {
     font-size: 14px !important;
   }
+  .sizeName {
+    font-size: 3.5vh !important;
+  }
 }
 @media only screen and (min-width: 600px) {
   .display-block {
@@ -63,7 +66,6 @@ a {
 .dn {
   display: none;
 }
-
 #preloader {
   position: fixed;
   top: 0;
@@ -111,7 +113,6 @@ a {
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
-
 .buttonCode {
   width: max-content;
   height: 29px;
@@ -122,7 +123,6 @@ a {
   font-family: Arial, Helvetica, sans-serif;
   vertical-align: sub !important;
 }
-
 .boxcards {
   display: flex;
   flex-direction: row;
@@ -130,7 +130,7 @@ a {
   flex-wrap: wrap;
 }
 .descript {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 .imgCenter {
   vertical-align: sub !important;
@@ -143,11 +143,27 @@ a {
   background: rgba(40, 40, 40, 0.6);
   width: 100%;
 }
+.sizeName {
+  font-size: 1.5vw;
+}
 .mt16 {
   margin-top: 16px;
 }
+.mt22 {
+  margin-top: 22px;
+}
 .mw {
   max-width: 1400px;
+}
+.mb10 {
+  margin-bottom: 10px !important;
+}
+.mb8 {
+  margin-bottom: 8px !important;
+}
+.hrProyect {
+  margin-top: 25px !important;
+  margin-bottom: 9px !important;
 }
 .wButton {
   width: 120px;
