@@ -203,6 +203,23 @@ $("#myonoffswitch2").change(function () {
 
 var arrLang = {
   en: {
+    epi1p: "Historia clínica | Angular 4",
+    epi2p: "Historia clínica | Migration to React.JS",
+    epi3p: "Mapa de camas",
+    epi4p: "Mobile prepaga",
+    epi5p: "Histórico TQ",
+
+    epi1d:
+      "Web project aimed at professionals in the health area, which we manage the maintenance, development and testing of new functionalities both backend and frontend. Angular 4, HTML, CSS, JavaScript, Bootstrap, MySQL, Java, Spring and JUnit were used. Managed in Redmine with Scrum methodology.",
+    epi2d:
+      "After research and analysis, it was decided to migrate the project from Angular 4 to React.Js while keeping the backend. It was a development from scratch, developed with React.Js (TypeScript), Material-UI, Axios and Redux. Managed by Jira with Scrum methodology.",
+    epi3d:
+      "Mobile project aimed at professionals in the health area in which the frontend was developed from the beginning. It is based on another related web project, being able to reuse its backend. Development was with React Native (TypeScript), Expo, Paper, Axios, and Redux. Managed by Jira with Scrum methodology.",
+    epi4d:
+      "Mobile project for clients in which temporary support was provided, maintaining and developing new functionalities. React Native (JavaScript, TypeScript), Expo, Paper, Axios and Redux were used. Managed by Jira with Scrum methodology.",
+    epi5d:
+      "Self-managed research project in which both the frontend and the backend were developed from the beginning. Aimed at professionals in the health area, it was carried out with Java, Spring, SQL Server and Svelte.",
+
     mmda: "University project in order to develop an Ecommerce.",
     ayuda: "University project in order to develop a network of donations.",
     recy: "The main idea of this university project was to raise awareness about recycling. For this we developed a website in which users can scan an object and in this way they would be indicated to what type of recycling it corresponded and to which recycling points they could take them. One of the main slogans was that the project had to be sustainable, so it was decided to develop in parallel an Ecommerce of products made with recyclable materials. Only recycling points could sell and users who recycled there were applied a discount on the final purchase price. To carry out this project, intensive research had to be carried out, both on the subject and having to use new tools for us, such as scanning objects by means of Artificial Intelligence.",
@@ -246,6 +263,23 @@ var arrLang = {
     St: "Technical support | Call center",
   },
   arg: {
+    epi1p: "Historia clínica | Angular 4",
+    epi2p: "Historia clínica | Migración a React.JS",
+    epi3p: "Mapa de camas",
+    epi4p: "Mobile prepaga",
+    epi5p: "Histórico TQ",
+
+    epi1d:
+      "Proyecto web destinado a profesionales del área de salud, el cual le gestionamos el mantenimiento, desarrollo y testeo de nuevas funcionalidades tanto backend como frontend. Se utilizó Angular 4, HTML, CSS, JavaScript, Bootstrap, MySQL, Java, Spring y JUnit. Gestionado en Redmine con metodología Scrum.",
+    epi2d:
+      "Después de una investigación y análisis se decidió migrar dicho proyecto de Angular 4 a React.Js manteniendo el backend. Fue un desarrollo desde cero, desarrollado con React.Js (TypeScript), Material-UI, Axios y Redux. Gestionado mediante Jira con metodología Scrum.",
+    epi3d:
+      "Proyecto mobile destinado a profesionales del área de salud en el cual se desarrolló el frontend desde un inicio. Está basado en otro proyecto web relacionado, pudiendo reutilizar el backend del mismo. El desarrollo fue con React Native (TypeScript), Expo, Paper, Axios y Redux. Gestionado mediante Jira con metodología Scrum.",
+    epi4d:
+      "Proyecto mobile destinado a clientes en el cual se le brindó soporte temporal dando mantenimiento y desarrollando nuevas funcionalidades. Se utilizaron React Native (JavaScript, TypeScript), Expo, Paper, Axios y Redux. Gestionado mediante Jira con metodología Scrum.",
+    epi5d:
+      "Proyecto de investigación autogestionado en el cual se desarrolló tanto el frontend como el backend desde el inicio. Destinado a profesionales del área de salud, se realizó con Java, Spring, SQL Server y Svelte.",
+
     mmda: "Proyecto universitario con la finalidad de desarrollar un Ecommerce.",
     ayuda:
       "Proyecto universitario con la finalidad de desarrollar una red de donaciones.",

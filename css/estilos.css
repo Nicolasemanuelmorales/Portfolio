@@ -161,6 +161,12 @@ a {
 .mb8 {
   margin-bottom: 8px !important;
 }
+.mb5 {
+  margin-bottom: 5px !important;
+}
+.mt8 {
+  margin-top: 8px !important;
+}
 .hrProyect {
   margin-top: 25px !important;
   margin-bottom: 9px !important;
