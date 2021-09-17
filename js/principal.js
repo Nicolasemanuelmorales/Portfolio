@@ -53,10 +53,12 @@ function cambiarAOscuro() {
   document.getElementById("footer").classList.remove("w3-teal");
   document.getElementById("footer").classList.add("negro-claro");
   document.getElementById("footer").classList.add("blanco-falso");
-  document
-    .getElementById("epiMasInfo")
-    .classList.remove("masInfoGradiantLight");
-  document.getElementById("epiMasInfo").classList.add("masInfoGradiantDark");
+  if (document.getElementById("epiMasInfo").classList.length === 2) {
+    document
+      .getElementById("epiMasInfo")
+      .classList.remove("masInfoGradiantLight");
+    document.getElementById("epiMasInfo").classList.add("masInfoGradiantDark");
+  }
 }
 function changeMasInfo() {
   if (document.getElementById("epiMasInfo").classList.length === 2) {
@@ -150,8 +152,12 @@ function cambiarAClaro() {
   document.getElementById("footer").classList.add("w3-teal");
   document.getElementById("footer").classList.remove("negro-claro");
   document.getElementById("footer").classList.remove("blanco-falso");
-  document.getElementById("epiMasInfo").classList.add("masInfoGradiantLight");
-  document.getElementById("epiMasInfo").classList.remove("masInfoGradiantDark");
+  if (document.getElementById("epiMasInfo").classList.length === 2) {
+    document.getElementById("epiMasInfo").classList.add("masInfoGradiantLight");
+    document
+      .getElementById("epiMasInfo")
+      .classList.remove("masInfoGradiantDark");
+  }
 }
 
 function CambiarEstado() {
