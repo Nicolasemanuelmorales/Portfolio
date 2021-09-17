@@ -69,7 +69,10 @@ function changeMasInfo() {
     document.getElementById("epiMasInfo").classList.add("mt16");
     document.getElementById("iconEpi").classList.remove("fa-chevron-down");
     document.getElementById("iconEpi").classList.add("fa-chevron-up");
-    if (localStorage2.getItem("Arg") == "false") {
+    if (
+      localStorage2.getItem("Arg") == "false" ||
+      localStorage2.getItem("Arg") == null
+    ) {
       document.getElementById("masInfoButton").textContent =
         "Menos Información";
     } else {
@@ -92,7 +95,10 @@ function changeMasInfo() {
     document.getElementById("iconEpi").classList.add("fa-chevron-down");
     document.getElementById("iconEpi").classList.remove("fa-chevron-up");
 
-    if (localStorage2.getItem("Arg") == "false") {
+    if (
+      localStorage2.getItem("Arg") == "false" ||
+      localStorage2.getItem("Arg") == null
+    ) {
       document.getElementById("masInfoButton").textContent = "Mas Información";
     } else {
       document.getElementById("masInfoButton").textContent = "More Information";
