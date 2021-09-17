@@ -132,6 +132,35 @@ a {
 .descript {
   margin-top: 10px;
 }
+.masInfo {
+  max-height: 180px;
+  overflow-y: scroll;
+  overflow: hidden;
+}
+.masInfoGradiantDark {
+  background: linear-gradient(
+    #31313100,
+    #31313100,
+    #3131319f,
+    #313131f1,
+    #313131
+  );
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+}
+.masInfoGradiantLight {
+  background: linear-gradient(
+    #ffffff00,
+    #ffffff00,
+    #ffffff9f,
+    #fffffff1,
+    #ffffff
+  );
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+}
 .imgCenter {
   vertical-align: sub !important;
 }

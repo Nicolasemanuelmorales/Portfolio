@@ -53,6 +53,63 @@ function cambiarAOscuro() {
   document.getElementById("footer").classList.remove("w3-teal");
   document.getElementById("footer").classList.add("negro-claro");
   document.getElementById("footer").classList.add("blanco-falso");
+  document
+    .getElementById("epiMasInfo")
+    .classList.remove("masInfoGradiantLight");
+  document.getElementById("epiMasInfo").classList.add("masInfoGradiantDark");
+}
+function changeMasInfo() {
+  if (document.getElementById("epiMasInfo").classList.length === 2) {
+    document
+      .getElementById("epiMasInfo")
+      .classList.remove("w3-display-topleft");
+    document.getElementById("masInf").classList.remove("masInfo");
+    document.getElementById("epiMasInfo").classList.add("mt16");
+    document.getElementById("iconEpi").classList.remove("fa-chevron-down");
+    document.getElementById("iconEpi").classList.add("fa-chevron-up");
+    if (localStorage2.getItem("Arg") == "false") {
+      document.getElementById("masInfoButton").textContent =
+        "Menos Información";
+    } else {
+      document.getElementById("masInfoButton").textContent = "Less Information";
+    }
+
+    if (localStorage2.getItem("Claro") == "true") {
+      document
+        .getElementById("epiMasInfo")
+        .classList.remove("masInfoGradiantLight");
+    } else {
+      document
+        .getElementById("epiMasInfo")
+        .classList.remove("masInfoGradiantDark");
+    }
+  } else {
+    document.getElementById("epiMasInfo").classList.add("w3-display-topleft");
+    document.getElementById("masInf").classList.add("masInfo");
+    document.getElementById("epiMasInfo").classList.remove("mt16");
+    document.getElementById("iconEpi").classList.add("fa-chevron-down");
+    document.getElementById("iconEpi").classList.remove("fa-chevron-up");
+
+    if (localStorage2.getItem("Arg") == "false") {
+      document.getElementById("masInfoButton").textContent = "Mas Información";
+    } else {
+      document.getElementById("masInfoButton").textContent = "More Information";
+    }
+
+    if (localStorage2.getItem("Claro") == "true") {
+      document
+        .getElementById("epiMasInfo")
+        .classList.add("masInfoGradiantLight");
+    } else {
+      document
+        .getElementById("epiMasInfo")
+        .classList.add("masInfoGradiantDark");
+    }
+  }
+  if ($(window).width() > 583) {
+    var h = document.getElementById("der").clientHeight;
+    $("#cuadro-izq").css({ minHeight: h + "px" });
+  }
 }
 
 function cambiarAClaro() {
@@ -93,6 +150,8 @@ function cambiarAClaro() {
   document.getElementById("footer").classList.add("w3-teal");
   document.getElementById("footer").classList.remove("negro-claro");
   document.getElementById("footer").classList.remove("blanco-falso");
+  document.getElementById("epiMasInfo").classList.add("masInfoGradiantLight");
+  document.getElementById("epiMasInfo").classList.remove("masInfoGradiantDark");
 }
 
 function CambiarEstado() {
@@ -120,6 +179,20 @@ function CambiarEstadoIdioma() {
     styleElem.innerHTML = "span.onoffswitch-inner:before {content: 'Dark';}";
     var styleElem2 = document.head.appendChild(document.createElement("style"));
     styleElem2.innerHTML = "span.onoffswitch-inner:after {content: 'Light';}";
+  }
+  if (document.getElementById("epiMasInfo").classList.length !== 2) {
+    if (localStorage2.getItem("Arg") == "false") {
+      document.getElementById("masInfoButton").textContent =
+        "Menos Información";
+    } else {
+      document.getElementById("masInfoButton").textContent = "Less Information";
+    }
+  } else {
+    if (localStorage2.getItem("Arg") == "false") {
+      document.getElementById("masInfoButton").textContent = "Mas Información";
+    } else {
+      document.getElementById("masInfoButton").textContent = "More Information";
+    }
   }
 }
 
@@ -162,6 +235,7 @@ function cargaDeCookies() {
     styleElem.innerHTML = "span.onoffswitch-inner:before {content: 'Dark';}";
     var styleElem2 = document.head.appendChild(document.createElement("style"));
     styleElem2.innerHTML = "span.onoffswitch-inner:after {content: 'Light';}";
+    document.getElementById("masInfoButton").textContent = "More Information";
   } else {
     $(".lang").each(function (index, item) {
       $(this).text(arrLang["arg"][$(this).attr("key")]);
@@ -171,14 +245,17 @@ function cargaDeCookies() {
     styleElem.innerHTML = "span.onoffswitch-inner:before {content: 'Oscuro';}";
     var styleElem2 = document.head.appendChild(document.createElement("style"));
     styleElem2.innerHTML = "span.onoffswitch-inner:after {content: 'Claro';}";
+    document.getElementById("masInfoButton").textContent = "Mas Información";
   }
 
   if (Claro == "true") {
     document.getElementById("myonoffswitch").checked = false;
     cambiarAClaro();
+    document.getElementById("epiMasInfo").classList.add("masInfoGradiantLight");
   } else {
     cambiarAOscuro();
     document.getElementById("myonoffswitch").checked = true;
+    document.getElementById("epiMasInfo").classList.add("masInfoGradiantDark");
   }
 }
 $(window).resize(function () {
@@ -208,7 +285,6 @@ var arrLang = {
     epi3p: "Mapa de camas",
     epi4p: "Mobile prepaga",
     epi5p: "Histórico TQ",
-
     epi1d:
       "Web project aimed at professionals in the health area, which we manage the maintenance, development and testing of new functionalities both backend and frontend. Angular 4, HTML, CSS, JavaScript, Bootstrap, MySQL, Java, Spring and JUnit were used. Managed in Redmine with Scrum methodology.",
     epi2d:
