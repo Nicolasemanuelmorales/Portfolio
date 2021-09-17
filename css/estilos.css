@@ -137,6 +137,17 @@ a {
   overflow-y: scroll;
   overflow: hidden;
 }
+.pl15 {
+  padding-left: 15px;
+}
+.plr15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.plr30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .masInfoGradiantDark {
   background: linear-gradient(
     #31313100,
